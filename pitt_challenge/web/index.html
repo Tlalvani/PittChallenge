@@ -4,10 +4,8 @@
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
-
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
-
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
@@ -27,9 +25,9 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -94,5 +92,29 @@
       loadMainDartJs();
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyDysyGInux8H-fVjpd61hRPA9jolBW7H2I",
+    authDomain: "doogle-329902.firebaseapp.com",
+    projectId: "doogle-329902",
+    storageBucket: "doogle-329902.appspot.com",
+    messagingSenderId: "948135903055",
+    appId: "1:948135903055:web:a2bf5b22d591c872070f3a",
+    measurementId: "G-FT4CGT5KZJ"
+  };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+   </script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
+
+
+
+
+
