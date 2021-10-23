@@ -1,0 +1,121 @@
+index                                                                               
+id                                                                                  
+birthdate                                                                                                    
+deathdate                                                                                                    
+ssn                                                                                                        
+drivers                                                                         
+passport                                                                                
+prefix                                                                                                              
+marital                                                                                                               
+race                                                                                                              
+ethnicity                                                                                                      
+sex                                                                                                                   
+birthplace                                                                              
+address                                                                                       
+city                                                                                                            
+state                                                                                                      
+county                                                                                                    
+zip                                                                                                               
+lat                                                                                                           
+lon                                                                                                           
+healthcare_expenses                                                                                           
+healthcare_coverage                                                                                             
+condition                                                                                   
+allergies                                                                                                            
+alanine aminotransferase [enzymatic activity/volume] in serum or plasma                                              
+albumin [mass/volume] in serum or plasma                                                                             
+alkaline phosphatase [enzymatic activity/volume] in serum or plasma                                                  
+american house dust mite ige ab in serum                                                                             
+aspartate aminotransferase [enzymatic activity/volume] in serum or plasma                                            
+bilirubin.total [mass/volume] in serum or plasma                                                                     
+bilirubin.total [mass/volume] in urine by test strip                                                                 
+body height                                                                                                        
+body mass index                                                                                                     
+body weight                                                                                                         
+body mass index (bmi) [percentile] per age and gender                                                                
+body temperature                                                                                                     
+calcium                                                                                                              
+carbon dioxide                                                                                                       
+cat dander ige ab in serum                                                                                           
+chloride                                                                                                             
+cladosporium herbarum ige ab in serum                                                                                
+codfish ige ab in serum                                                                                              
+common ragweed ige ab in serum                                                                                       
+cow milk ige ab in serum                                                                                             
+creatinine                                                                                                           
+daly                                                                                                                 
+dxa [t-score] bone density                                                                                           
+diastolic blood pressure                                                                                            
+egg white ige ab in serum                                                                                            
+erythrocyte distribution width [entitic volume] by automated count                                                  
+erythrocytes [#/volume] in blood by automated count
+estimated glomerular filtration rate                                                                                 
+fev1/fvc                                                                                                             
+globulin [mass/volume] in serum by calculation                                                                       
+glomerular filtration rate/1.73 sq m.predicted                                                                       
+glucose                                                                                                              
+glucose [mass/volume] in urine by test strip                                                                         
+head occipital-frontal circumference                                                                                 
+heart rate                                                                                                          
+hematocrit [volume fraction] of blood                                                                                
+hematocrit [volume fraction] of blood by automated count                                                            
+hemoglobin a1c/hemoglobin.total in blood                                                                             
+hemoglobin [mass/volume] in blood                                                                                 
+hemoglobin.gastrointestinal [presence] in stool by immunologic method                                                
+high density lipoprotein cholesterol                                                                                 
+history of hospitalizations+outpatient visits                                                                        
+honey bee ige ab in serum                                                                                            
+ketones [mass/volume] in urine by test strip                                                                         
+latex ige ab in serum                                                                                                
+left ventricular ejection fraction                                                                                   
+leukocytes [#/volume] in blood by automated count                                                                    
+low density lipoprotein cholesterol                                                                                  
+lymph nodes with isolated tumor cells [#] in cancer specimen by light microscopy                                     
+lymph nodes with macrometastases [#] in cancer specimen by light microscopy                                          
+lymph nodes with micrometastases [#] in cancer specimen by light microscopy                                          
+mch [entitic mass] by automated count                                                                             
+mchc [mass/volume] by automated count                                                                               
+mcv [entitic volume] by automated count                                                                             
+mental health outpatient note                                                                                        
+microalbumin creatinine ratio                                                                                        
+nt-probnp                                                                                                            
+oxygen saturation in arterial blood                                                                                  
+pain severity - 0-10 verbal numeric rating [score] - reported                                                        
+peanut ige ab in serum                                                                                               
+percentage area affected by eczema head and neck                                                                     
+percentage area affected by eczema lower extremitiy - bilateral                                                      
+percentage area affected by eczema trunk                                                                             
+percentage area affected by eczema upper extremitiy - bilateral                                                      
+platelet distribution width [entitic volume] in blood by automated count                                           
+platelet mean volume [entitic volume] in blood by automated count                                                    
+platelets [#/volume] in blood by automated count                                                                   
+polyp size greatest dimension by cap cancer protocols                                                                
+potassium                                                                                                            
+prostate specific ag [mass/volume] in serum or plasma                                                                
+protein [mass/volume] in serum or plasma                                                                             
+protein [mass/volume] in urine by test strip                                                                         
+qaly                                                                                                                
+qols                                                                                                                 
+rbc auto (bld) [#/vol]                                                                                               
+rdw - erythrocyte distribution width auto (rbc) [entitic vol]                                                        
+respiratory rate                                                                                                    
+shrimp ige ab in serum                                                                                               
+size.maximum dimension in tumor                                                                                      
+sodium                                                                                                               
+soybean ige ab in serum                                                                                              
+specific gravity of urine by test strip                                                                              
+systolic blood pressure                                                                                            
+thyrotropin [units/volume] in serum or plasma                                                                        
+thyroxine (t4) free [mass/volume] in serum or plasma                                                                 
+total cholesterol                                                                                                    
+total score [mmse]                                                                                                   
+triglycerides                                                                                                        
+urea nitrogen                                                                                                        
+wbc auto (bld) [#/vol]                                                                                               
+walnut ige ab in serum                                                                                               
+weight difference [mass difference] --pre dialysis - post dialysis                                                   
+weight-for-length per age and sex                                                                                    
+wheat ige ab in serum                                                                                                
+white oak ige ab in serum                                                                                            
+ph of urine by test strip                                                                                            
+name
