@@ -9,13 +9,9 @@ class Patients extends StatelessWidget {
   @override
   final DbService repository = DbService();
 
-
-
-  // 1
   Widget _buildList(BuildContext context, List<DocumentSnapshot> snapshot) {
     return ListView(
       padding: const EdgeInsets.only(top: 20.0),
-      // 2
       children: snapshot.map((data) => _buildListItem(context, data)).toList(),
     );
   }
@@ -26,8 +22,6 @@ class Patients extends StatelessWidget {
 
     return PatientCard(patient: patient);
   }
-
-
 
   Widget build(BuildContext context) {
     void _addPatient() {
@@ -47,7 +41,7 @@ class Patients extends StatelessWidget {
         onPressed: () {
           _addPatient();
         },
-        tooltip: 'Add Pet',
+        tooltip: 'Add Patient',
         child: const Icon(Icons.add),
       ),
       body: StreamBuilder<QuerySnapshot>(

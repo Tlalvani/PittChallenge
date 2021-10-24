@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'patient.dart';
 import 'package:pitt_challenge/services/db.dart';
-
+import 'patientInfo.dart';
 class PatientDetail extends StatefulWidget {
   final Patient patient;
 
@@ -118,6 +118,20 @@ class _PatientDetailState extends State<PatientDetail> {
                       )),
                   MaterialButton(
                     color: Colors.blue.shade600,
+                    onPressed: () => Navigator.push<Widget>(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PatientInfo(patient: widget.patient),
+                      ),
+                    ),
+                    child: const Text(
+                      'Access Medical Records',
+                      style: TextStyle(color: Colors.white, fontSize: 12.0),
+                    ),
+
+                  ),
+                  MaterialButton(
+                    color: Colors.blue.shade600,
                     onPressed: () async {
                       if (_formKey.currentState?.validate() ?? false) {
                         Navigator.of(context).pop();
@@ -145,6 +159,7 @@ class _PatientDetailState extends State<PatientDetail> {
                       'Update',
                       style: TextStyle(color: Colors.white, fontSize: 12.0),
                     ),
+
                   ),
                 ],
               ),
@@ -184,9 +199,12 @@ class UserTextField extends StatelessWidget {
     );
   }
 
+  String getName(String name){
+    return name == null ? "No name" : name;
+  }
   InputDecoration inputDecoration() {
     return InputDecoration(
-      labelText: name,
+      labelText: getName(name),
       enabledBorder: OutlineInputBorder(
         borderSide: const BorderSide(
           color: Colors.blueAccent,

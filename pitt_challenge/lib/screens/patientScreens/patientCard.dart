@@ -9,6 +9,10 @@ class PatientCard extends StatelessWidget {
    PatientCard({Key key, this.patient, this.boldStyle})
       : super(key: key);
 
+   String getName(){
+     return patient.name == null ? "No Name" : patient.name;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -19,7 +23,7 @@ class PatientCard extends StatelessWidget {
             child: Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-              child: Text(patient.name, style: boldStyle),
+              child: Text(getName(), style: boldStyle),
             ),
           ),
           _getPatientIcon()
@@ -39,9 +43,7 @@ class PatientCard extends StatelessWidget {
     Widget patientIcon;
       patientIcon = IconButton(
         icon: const Icon((Icons.person), color: Colors.blueGrey,),
-        onPressed: () {
-
-        },
+        onPressed: () {},
       );
     return patientIcon;
   }

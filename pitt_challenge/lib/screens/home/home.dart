@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
               NavigationRailDestination(
                 icon: Icon(Icons.home_filled),
                 selectedIcon: Icon(Icons.home),
-                label: Text('Dashboard'),
+                label: Text('Calendar'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.favorite_border),
