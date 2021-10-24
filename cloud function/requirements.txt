@@ -1,0 +1,7 @@
+nltk
+keras
+numpy
+firebase_admin
+google.cloud
+tensorflow
+requests
