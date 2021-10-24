@@ -34,10 +34,11 @@ class ChatState extends State<Chat> {
       repo.inputChatbot(input);
 
       setState(() { messages.add(ChatMessage(messageContent: input, messageType: "sender"));
-      if(input == "Hello" || input == "Hi"){
+      input = input.toLowerCase();
+      if(input.contains("hello") || input.contains("hi")){
         messages.add(ChatMessage(messageContent: "Hello, I am Doogle!", messageType: "receiver"));
       }
-      else if(input == "Goodbye" || input == "Bye"){
+      else if(input.contains("goodbye") || input.contains("bye")){
         messages.add(ChatMessage(messageContent: "Goodbye!", messageType: "receiver"));
       }
       else if(input.contains("appointment")){
@@ -48,7 +49,12 @@ class ChatState extends State<Chat> {
         String formattedDate = DateFormat('kk:mm:ss \n EEE d MMM').format(now);
         messages.add(ChatMessage(messageContent: "It is " + formattedDate, messageType: "receiver"));
       }
-
+      else if(input.contains("support")){
+        DateTime now = DateTime.now();
+        String formattedDate = DateFormat('kk:mm:ss \n EEE d MMM').format(now);
+        messages.add(ChatMessage(messageContent: "I can modify information on your current patients, access them for you, search by a parameter like blood pressure, provide information on nearby hospitals and pharmacies,\n"
+            +"and provide summary statistics on your patients", messageType: "receiver"));
+      }
       else{
         messages.add(ChatMessage(messageContent: "Sorry, I do not understand!", messageType: "receiver"));
       }

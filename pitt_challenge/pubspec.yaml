@@ -54,7 +54,6 @@ flutter:
   uses-material-design: true
   assets:
     - /Users/ultra/Desktop/Github/PittChallenge/pitt_challenge/lib/assets/calendar.PNG
-    - /Users/ultra/Desktop/Github/PittChallenge/cred.json
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
