@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can modify information on your current patients, access them for you, search by a parameter like blood pressure, provide information on nearby hospitals and pharmacies, and provide summary statistics on your patients"],
+         "context": [""]
+        },
+        {"tag": "modify_patient",
+         "patterns": ["Update a patient", "Change a patients data", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["What is the patient's name?"],
+         "context": ["modify_patient"]
+        },
+        {"tag": "access_patient",
+         "patterns": ["Search for patient", "Lookup patient", "Find patient", "I want to see patient"],
+         "responses": ["What is the patient's name?"],
+         "context": ["access_patient"]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy", "Provide information on pharmacy" ],
+         "responses": ["Listing nearest pharmacies ..."],
+         "context": ["pharmacy_search"]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["hospital_search"]
+        },
+        {"tag": "stat_average",
+         "patterns": ["Provide the average value ",  "I want to see average", "Show me average", "Show me the mean value", "mean value for"],
+         "responses": ["Please provide the characteristic you would like me to provide an average for"],
+         "context": ["stat_average"]
+        },
+        {"tag": "stat_min",
+        "patterns": ["Provide the minimum value ", "I want to see the minimum value ", "Show me the patient with the minimum ", "min value", "minimum value", "Load min value"],
+        "responses": ["Please provide the characteristic you would like me to provide a minimum for"],
+        "context": ["stat_min"]
+        },
+        {"tag": "stat_max",
+        "patterns": ["Provide the maximum value ", "I want to see the maximum value ", "Show me the patient with the maximum ", "max value", "maximum value", "Load max value"],
+        "responses": ["Please provide the characteristic you would like me to provide a maximum for"],
+        "context": ["stat_maxr"]
+        },
+        {"tag": "stat_count",
+         "patterns": ["Show me a number of people", "Show me the count of","Provide the count of", "count of "],
+         "responses": ["Please provide the characteristic you would like me to provide a count for"],
+         "context": ["stat_count"]
+        }, 
+        {"tag": "patient_field",
+         "patterns": ["I want to search in a patients specific result history", "Characteristic for patient", "Load patient result for ", "Show a result for patient", "Find a result by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["patient_field"]
+        }
+   ]
+}
