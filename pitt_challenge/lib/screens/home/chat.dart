@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:pitt_challenge/services/functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:pitt_challenge/services/db.dart';
-
+import 'package:intl/intl.dart';
 class ChatMessage{
   String messageContent;
   String messageType;
@@ -32,7 +32,28 @@ class ChatState extends State<Chat> {
     void submit(){
       print(input);
       repo.inputChatbot(input);
-      setState(() { messages.add(ChatMessage(messageContent: input, messageType: "sender")); });
+
+      setState(() { messages.add(ChatMessage(messageContent: input, messageType: "sender"));
+      if(input == "Hello" || input == "Hi"){
+        messages.add(ChatMessage(messageContent: "Hello, I am Doogle!", messageType: "receiver"));
+      }
+      else if(input == "Goodbye" || input == "Bye"){
+        messages.add(ChatMessage(messageContent: "Goodbye!", messageType: "receiver"));
+      }
+      else if(input.contains("appointment")){
+        messages.add(ChatMessage(messageContent: "No appointments for today!", messageType: "receiver"));
+      }
+      else if(input.contains("time")){
+        DateTime now = DateTime.now();
+        String formattedDate = DateFormat('kk:mm:ss \n EEE d MMM').format(now);
+        messages.add(ChatMessage(messageContent: "It is " + formattedDate, messageType: "receiver"));
+      }
+
+      else{
+        messages.add(ChatMessage(messageContent: "Sorry, I do not understand!", messageType: "receiver"));
+      }
+
+      });
       cloud.sendUID(repo.getUID());
       input = null;
       fieldText.clear();
